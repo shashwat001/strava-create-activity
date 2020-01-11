@@ -6,10 +6,15 @@ Manually create activity TCX file by copying strava activity of another user. Up
 
 1. Login to strava account on the browser.
 2. Open config.py and set the value of the cookie with the name given in the first line.
-3. Run the script ```main.py``` as follow to get activity TCX in stdout
+3. Run the script ```main.py``` as follows to get activity TCX in stdout
 
 ```
-python main.py --activity=<activity-id> --start=<timestamp>
+python main.py --activityid=<activity-id> --start=<timestamp>
+```
+or
+
+```
+python main.py -a <activity-id> -s <timestamp>
 ```
 ```timestamp``` : timestamp in epoch seconds which you want to set as start time of activity
 
